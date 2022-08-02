@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Currency Converter</string>
+    <string name="currency_converter">Currency\nConverter</string>
+    <string name="from">From</string>
+    <string name="select_country">select Country</string>
+    <string name="require">require</string>
+    <string name="email">"@gmail.com"</string>
+    <string name="american_dollar">American dollar</string>
+    <string name="to"><b>To</b></string>
+    <string name="egyptian_pound">Egyptian Pound</string>
+    <string name="amount"><b>amount</b></string>
+    <string name="convert">convert</string>
+    <string name="result">Result</string>
+    <string name="converted_amount">converted amount</string>
+</resources>
