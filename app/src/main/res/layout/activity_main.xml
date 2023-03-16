@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -15,14 +16,13 @@
         android:hint="@string/converted_amount"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/result_ed"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:enabled="false"/>
+            android:enabled="false" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -78,11 +78,11 @@
         <!--        app:helperText="@string/require"-->
         <!--        app:helperTextTextColor="@color/red"-->
         <AutoCompleteTextView
-            android:id="@+id/from_auto_complete_text_view"
+            android:id="@+id/from_currency_menu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/american_dollar"
-            android:inputType="none"/>
+            android:inputType="none"
+            android:text="@string/american_dollar" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -91,8 +91,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:textSize="18sp"
         android:text="@string/to"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
 
@@ -110,6 +110,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3">
 
         <AutoCompleteTextView
+            android:id="@+id/to_currency_menu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="none"
@@ -144,6 +145,7 @@
             android:id="@+id/amount_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="@string/_1"
             android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -153,7 +155,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="@string/convert"
-        app:backgroundTint = "@color/green"
+        app:backgroundTint="@color/green"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -166,9 +168,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="@string/result"
-        android:textStyle="bold"
         android:textColor="@color/red"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/convert_button" />
 </androidx.constraintlayout.widget.ConstraintLayout>
